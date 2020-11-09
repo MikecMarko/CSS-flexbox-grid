@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@media screen and (min-width:576px){
+
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:
+        "one one two three three four"
+        "one one seven five five four"
+        "ten nine nine five five four"
+        "ten eight six six six four"
+         ;
+    }
+    
+    
+    .item-1{
+        background:url(pic1.jpg);
+        grid-area: one;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 40px;
+    }
+    .item-2{
+        background-color: yellowgreen;
+        grid-area: two;
+    }
+    .item-3{
+        background-color: purple;
+        grid-area: three;
+    }
+    .item-4{
+        background-color:pink;
+        grid-area: four;
+    }
+    .item-5{
+        background-color: blue;
+        grid-area: five;
+    }
+    .item-6{
+        background-color: gray;
+        grid-area: six;
+    }
+    .item-7{
+        background-color: yellow;
+        grid-area: seven;
+    }
+    .item-8{
+        background-color: brown;
+        grid-area: eight;
+    }
+    .item-9{
+        background-color: orange;
+        grid-area: nine;
+    }
+    .item-10{
+        background-color: aqua;
+        grid-area: ten;
+    }
+    
+
+}
+
+
+@media screen and (max-width:576px){
+
+    .container{
+        display: inline-flexbox;
+        flex-direction: column;
+    }
+    
+    .item{
+        flex:0 0 300px;
+        display: flex;
+        justify-content: center;
+        align-items:center; 
+        font-size:60px;
+        color: black;
+        text-transform: uppercase;   
+    }
+    .item-1{
+        background:url(pic1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 70px;
+    }
+    .item-1:hover{
+        opacity: 0.8;
+        color:black;
+        font-size: 80px;
+    }
+    .item-2{
+        background-color: yellowgreen;
+    }
+    .item-2:hover{
+        opacity: 0.8;
+    }
+    .item-3{
+        background-color: purple;
+        
+    }
+    .item-3:hover{
+        opacity: 0.8;
+    }
+    .item-4{
+        background-color:pink;
+        
+    }
+    .item-4:hover{
+        opacity: 0.8;
+    }
+    .item-5{
+        background-color: blue;
+       
+    }
+    .item-5:hover{
+        opacity: 0.8;
+    }
+    .item-6{
+        background-color: gray;
+        
+    }
+    .item-6:hover{
+        opacity: 0.8;
+    }
+    .item-7{
+        background-color: yellow;
+       
+    }
+    .item-7:hover{
+        opacity: 0.8;
+    }
+    .item-8{
+        background-color: brown;
+        
+    } 
+    .item-8:hover{
+        opacity: 0.8;
+    }
+    .item-9{
+        background-color: orange;
+        
+    }
+    .item-9:hover{
+        opacity: 0.8;
+    }
+    .item-10{
+        background-color: aqua;
+        
+    }
+    .item-10:hover{
+        opacity: 0.8;
+    }
+
+}

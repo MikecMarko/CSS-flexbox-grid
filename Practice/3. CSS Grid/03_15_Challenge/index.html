@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rainbow Box - Start</title>
+	<meta charset="utf-8">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<style>
+		.container{
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: repeat(5,1fr);
+		}
+		.red{
+			grid-column-start: 2;
+			grid-column-end: 6;
+		}
+		.white{
+			grid-row-start: 1;
+		}
+		.orange{
+			grid-column-start: 1;
+			grid-row-start: 2;
+			grid-row-end: 6;
+		}
+		.yellow{
+			grid-row: 2 / 5;
+			grid-column: 2 / 4;
+		}
+		.green{
+			grid-row: 2;
+			grid-column: 4 / 6;
+		}
+		.gray{
+			grid-area: 3/4/5/6;
+		}
+		.blue{
+			grid-column: 2 / span 4;
+		}
+		.purple{
+			grid-column-start: 6;
+			grid-row-start: 1;
+			grid-row-end: 6;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="red">
+			&nbsp;
+		</div>
+		<div class="orange">
+			&nbsp;
+		</div>
+		<div class="yellow">
+			&nbsp;
+		</div>
+		<div class="green">
+			&nbsp;
+		</div>
+		<div class="blue">
+			&nbsp;
+		</div>
+		<div class="purple">
+			&nbsp;
+		</div>
+		<div class="gray">
+			&nbsp;
+		</div>
+		<div class="white">
+			&nbsp;
+		</div>
+	</div>
+</body>
+</html>
