@@ -1,0 +1,87 @@
+/*CSS Variables : we will use them trought entire css independent from elements*/
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light:#fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0,8);     
+}
+
+
+html{
+    /*We use borderbox to ensure that if we use padding for example it wouldnt affect the width of the element */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background: #ccc;
+    /*30 for top and bottom and 50 for left and right*/
+    margin: 30px 50px;
+    line-height: 1.5;;
+}
+
+.btn{
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/*Navigation CSS*/
+
+.main-nav ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+
+}
+
+.main-nav a:hover{
+    background: var(--dark);
+    color: var(--light);
+}
+
+
+/* TOP container CSS*/
+
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "showcase showcase top-boxa"
+    "showcase showcase top-boxb";
+}
+
+.top-boxa{
+    grid-area: top-boxa;
+}
+.top-boxb{
+    grid-area: top-boxb;
+}
+
+ 
