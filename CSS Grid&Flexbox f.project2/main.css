@@ -1,8 +1,8 @@
 /*CSS Variables : we will use them trought entire css independent from elements*/
 :root {
-    --primary: #ddd;
-    --dark: #333;
-    --light:#fff;
+    --primary: beige;
+    --dark:#432616;
+    --light:#9a784f;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0,8);     
 }
 
@@ -178,5 +178,33 @@ img{
         "showcase showcase"
         "top-boxa top-boxb";
     }
+    .showcase h1{
+        font-size: 2.5rem;
+    }
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    
+    .info{
+        grid-template-columns: 1fr;
+    }
 
+    .info .btn{
+        display: block;
+        text-align: center;
+        margin: auto;
+
+    }
+
+
+}
+
+
+@media(max-width:500px){
+    .top-container{
+        grid-template-areas: 
+        "showcase"
+        "top-boxa"
+        "top-boxa";
+    }
 }
